@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 from joblib import load
-model = load('./savedModels/model.joblib')
+model = load('./saved_models/model.joblib')
 
 def predictor(request):
     return render(request, 'main.html')
